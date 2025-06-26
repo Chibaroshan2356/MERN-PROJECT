@@ -1,6 +1,8 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 
+axios.defaults.baseURL = 'https://mern-project-i4da.onrender.com';
+
 const AuthContext = createContext();
 
 export const useAuth = () => {
